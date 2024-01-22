@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="src/img/logo.png">
+    <title>MASUM</title>
+
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;duration-1000;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+
+    <!-- FONT end -->
+
+    <!-- icon -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- icon end -->
+
+    <!-- font awsome start-->
+    <script src="https://kit.fontawesome.com/98021032cd.js" crossorigin="anonymous"></script>
+    <!-- font awsome end-->
+
+    <link rel="stylesheet" href="./src/output.css">
+
+</head>
+
+<body class=" bg-gray-950 scrollbar">
+
+    <!-- header start -->
+
+    <!-- navegation start -->
+
+    <header class="bg-gray-800 py-[10px]">
+
+        <nav class="flex justify-between items-center w-[92%]  mx-auto md:w-full lg:w-full">
+
+            <div>
+
+                <div
+                    class="w-[78px] h-[54px] cursor-pointer md:mx-[0vw] md:w[78px] md:h-[54px] lg:mx-[6vw] animate-nvspin rounded-full bg-[url('img/logo.png')] bg-no-repeat bg-[length:78px_54px]">
+                </div>
+
+            </div>
+
+
+            <div
+                class="nav-links duration-1000 md:static lg:static absolute bg-gray-800 mobile:rounded-b-lg md:min-h-fit min-h-[47vh] left-0 top-[-100%] md:w-auto  w-full flex items-centerpx-5 font-bold font-[lemon] text-xl">
+
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-0 text-white">
+
+                    <li>
+                        <a class="md:py-[16px] md:px-[0px] md:flex block md:w-fit w-[100vw] md:mt-auto mt-6 leading-[50px] md:leading-3 ps-5 rounded hover:text-gray-950 hover:bg-red-700 duration-1000 hover:shadow-nvglow"
+                            href="index.html" target="_self">Home</a>
+                    </li>
+                    <li>
+                        <a class="md:py-[16px] md:px-[0px] md:flex block md:w-fit w-[100vw] md:mt-auto mt-3 leading-[50px] md:leading-3 ps-5 rounded hover:text-gray-950 hover:bg-red-700 duration-1000 hover:shadow-nvglow"
+                            href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a class="md:py-[16px] md:px-[0px] md:flex block md:w-fit w-[100vw] md:mt-auto mt-3 leading-[50px] md:leading-3 ps-5 rounded hover:text-gray-950 hover:bg-red-700 duration-1000 hover:shadow-nvglow"
+                            href="cv.html">Resume/CV</a>
+                    </li>
+                    <li>
+                        <a class="md:py-[16px] md:px-[0px] md:flex block md:w-fit w-[100vw] md:mt-auto mt-3 leading-[50px] md:leading-3 ps-5 rounded bg-red-700 duration-1000 shadow-nvglow"
+                            href="Skills.html" target="_self">Skills</a>
+                    </li>
+                    <li>
+                        <a class="md:py-[16px] md:px-[0px] md:flex block md:w-fit w-[100vw] md:mt-auto mt-3 leading-[50px] md:leading-3 ps-5 rounded hover:text-gray-950 hover:bg-red-700 duration-1000 hover:shadow-nvglow"
+                            href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="flex items-center gap-6">
+
+                <button
+                    class="bg-[#38d4d4] text-lg text-white px-5 py-2 md:px-[7px] md:py-[10px] md:mx-[2vw] lg:mx-[6vw] rounded-full p-[20px] hover:text-gray-950 hover:bg-red-700 duration-1000 font-[lemon] hover:shadow-nvglow">Rent
+                    now</button>
+
+                <ion-icon onclick="onToggleMenu(this)" name="menu"
+                    class="text-3xl cursor-pointer md:hidden text-white h-16 w-11"></ion-icon>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- navegation end -->
+
+    <!-- navegation script start -->
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+
+    <!-- navegation script end -->
+
+    <!-- header end -->
+
+    <div class="overflow-hidden text-center p-[1%] leading-[40px] mx-[5vw] my-[5vh] relative"> <!--whole parent-->
+        <!-- skills start -->
+
+        <!-- main html&CSS start -->
+
+        <div
+            class="w-[70vw] h-[80vh] border border-[#277a7a] mx-auto hover:border-[aqua] hover:shadow-sshadow duration-[1s] mt-[40px]">
+
+            <div class="m-[20px]">
+
+                <h1 class="text-white font-[lemon] underline text-2xl">HTML & CSS Mastery:</h1>
+
+                <p class="text-white font-[lemon]">
+                    I excel in crafting clean and semantic HTML code, ensuring the structural integrity of web pages. My
+                    proficiency in CSS allows me to bring designs to life, creating sleek and responsive layouts. I pay
+                    meticulous attention to design details, making sure that every element on the page aligns with the
+                    overall aesthetic.
+                </p>
+
+                <div class="text-[50px] mt-[4vw] w-full h-full mx-auto">
+
+                    <div class=" relative w-full h-full">
+
+                        <!-- section 01 start -->
+
+                        <!-- html and css bar start -->
+
+                        <div class="w-[427px] h-[219px]">
+
+                            <!-- html first start -->
+
+                            <div>
+
+                                <!-- html logo start -->
+
+                                <i class="fa-brands fa-html5 text-red-500 flex justify-start items-start">
+
+                                    <h1 class="text-2xl text-white mt-[1.5vh] ml-[1.2vw]">Html</h1>
+
+                                </i>
+
+                                <!-- html logo end -->
+
+                                <!-- html progress bar start -->
+
+                                <div class="bg-black h-[1.5vh] w-[30vw] mt-[0.8vw] rounded-full relative">
+
+                                    <div class="w-[90%] h-full">
+
+                                        <div
+                                            class="bg-red-500 w-[100%] h-full rounded-full animate-progressbar relative">
+
+                                            <span
+                                                class="text-sm text-white absolute top-[-40px] right-[-26px] z-[3] animate-aopacity duration-[1s]">90%</span>
+                                            <i
+                                                class="fa-solid fa-message absolute top-[-50px] right-[-35px] z-[2] animate-aopacity duration-[1s]"></i>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- html progress bar end -->
+                            </div>
+
+                            <!-- html first end -->
+
+                            <br>
+
+                            <!-- CSS first start -->
+
+                            <div>
+
+                                <!-- CSS logo start -->
+
+                                <i class="fa-brands fa-css3-alt text-blue-500 mt-[0px] flex justify-start items-start">
+
+                                    <h1 class="text-2xl text-white mt-[1.5vh] ml-[1.2vw]">CSS</h1>
+
+                                </i>
+
+                                <!-- CSS logo end -->
+
+                                <!-- CSS progress bar start -->
+
+                                <div class="bg-black h-[1.5vh] w-[30vw] mt-[0.8vw] rounded-full relative">
+
+                                    <div class=" w-[80%] h-full">
+
+                                        <div
+                                            class="bg-blue-500 w-[100%] h-full rounded-full animate-progressbar relative">
+
+                                            <span
+                                                class="text-sm text-white absolute top-[-40px] right-[-26px] z-[3] animate-aopacity duration-[1s]">80%</span>
+                                            <i
+                                                class="fa-solid fa-message absolute top-[-50px] right-[-35px] z-[2] animate-aopacity duration-[1s]"></i>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- CSS progress bar end -->
+
+                            </div>
+
+                            <!-- CSS first end -->
+
+                        </div>
+
+                        <!-- html and css bar end -->
+
+                        <!-- sectin 01 end -->
+
+                        <!-- devider start -->
+                        <div
+                            class="bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] rounded-full h-full w-[9px] absolute top-0 left-[48%]">
+                        </div>
+                        <!-- devider end -->
+
+                        <!-- sectin 02 start -->
+
+
+                        <div class="absolute top-0 right-0 w-[48.5%] h-full">
+
+                            <div class="relative w-full h-full">
+
+                                <!-- for html start circule -->
+
+                                <div
+                                    class="w-[49%] h-full bg-[conic-gradient(from_396deg_at_50%_50%,rgb(239,68,68)_0%,rgb(239,68,68)_90%,black_90%,black_100%,rgb(239,68,68))] absolute top-0 left-0 rounded-full animate-ncroll-90">
+
+                                    <div class="w-full h-full flex items-center justify-center">
+
+                                        <div class="bg-gray-950 w-[90%] h-[90%] rounded-full">
+
+                                            <div class="w-full h-full flex items-center justify-center">
+
+                                                <!-- logo start -->
+
+                                                <i
+                                                    class="fa-brands fa-html5 text-red-500 flex justify-start items-start text-[40px]">
+
+                                                    <span class="text-white pl-[10px] font-light">90<span
+                                                            class="font-serif font-bold">%</span></span>
+
+                                                </i>
+
+                                                <!-- logo end -->
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- for html end circule -->
+
+                                <!-- for CSS start circule -->
+
+                                <div
+                                    class="w-[49%] h-full bg-[conic-gradient(from_432deg_at_50%_50%,rgb(59,130,246)_0%,rgb(59,130,246)_80%,black_80%,black_100%,rgb(59,130,246))] absolute top-0 right-0 rounded-full animate-ncroll-80">
+
+                                    <div class="w-full h-full flex items-center justify-center">
+
+                                        <div class="bg-gray-950 w-[90%] h-[90%] rounded-full">
+
+                                            <div class="w-full h-full flex items-center justify-center">
+
+                                                <!-- logo start -->
+
+                                                <i
+                                                    class="fa-brands fa-css3-alt text-blue-500 flex justify-start items-start text-[40px]">
+
+                                                    <span class="text-white pl-[10px] font-light">80<span
+                                                            class="font-serif font-bold">%</span></span>
+
+                                                </i>
+
+                                                <!-- logo end -->
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- for CSS end circule -->
+
+                            </div>
+
+                        </div>
+
+                        <!-- sectin 02 end -->
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+        <!-- main html&CSS end -->
+
+        <!-- bootstrap start -->
+
+        <div
+            class="w-[70vw] h-[80vh] border border-[#277a7a] mx-auto hover:border-[aqua] hover:shadow-sshadow duration-[1s] mt-[40px]">
+
+            <div class="m-[20px]">
+
+                <h1 class="text-white font-[lemon] underline text-2xl">Bootstrap Expertise:</h1>
+
+                <p class="text-white font-[lemon]">
+                    I have hands-on experience with Bootstrap, a powerful front-end framework that accelerates the
+                    development process. Leveraging its responsive grid system and pre-built components, I can create
+                    websites that seamlessly adapt to various screen sizes and devices. My use of Bootstrap ensures both
+                    efficiency in development and a consistent user experience.
+                </p>
+
+                <div class="text-[50px] mt-[4vw] w-full h-full mx-auto">
+
+                    <div class=" relative w-full h-full">
+
+                        <!-- section 01 start -->
+
+                        <!-- bootstrap start -->
+
+                        <div class="w-[427px] h-[219px]">
+
+                            <!-- bootstrap first start -->
+
+                            <div class="relative w-full h-full">
+
+                                <div class=" absolute top-[70px]">
+
+                                    <!-- bootstrap logo start -->
+
+                                    <div class="flex justify-start items-start">
+
+                                        <i class="fa-brands fa-bootstrap text-purple-600">
+
+                                        </i>
+                                        <h1
+                                            class="text-2xl text-white mt-[1.5vh] ml-[1.2vw] absolute left-[40px] font-bold">
+                                            Bootstrap</h1>
+
+                                    </div>
+
+                                    <!-- bootstrap logo end -->
+
+                                    <!-- html progress bar start -->
+
+                                    <div class="bg-black h-[1.5vh] w-[30vw] mt-[0.8vw] rounded-full relative">
+
+                                        <div class="w-[45%] h-full">
+
+                                            <div
+                                                class="bg-purple-600 w-[100%] h-full rounded-full animate-progressbar relative">
+
+                                                <span
+                                                    class="text-sm text-white absolute top-[-40px] right-[-26px] z-[3] animate-aopacity duration-[1s]">45%</span>
+                                                <i
+                                                    class="fa-solid fa-message absolute top-[-50px] right-[-35px] z-[2] animate-aopacity duration-[1s]"></i>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- html progress bar end -->
+                            </div>
+
+                            <!-- html first end -->
+
+                        </div>
+
+                        <!-- bootstrap bar end -->
+
+                        <!-- sectin 01 end -->
+
+                        <!-- devider start -->
+                        <div
+                            class="bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] rounded-full h-full w-[9px] absolute top-0 left-[48%]">
+                        </div>
+                        <!-- devider end -->
+
+                        <!-- sectin 02 start -->
+
+
+                        <div class="absolute top-0 right-0 w-[48.5%] h-full">
+
+                            <div class="relative w-full h-full">
+
+                                <!-- for html start circule -->
+
+                                <div
+                                    class="w-[49%] h-full bg-[conic-gradient(from_558.2deg_at_50%_50%,rgb(147,51,234)_0%,rgb(147,51,234)_45%,black_45%,black_100%,rgb(239,68,68))] absolute left-[25%] rounded-full animate-ncroll-45">
+
+                                    <div class="w-full h-full flex items-center justify-center">
+
+                                        <div class="bg-gray-950 w-[90%] h-[90%] rounded-full">
+
+                                            <div class="w-full h-full flex items-center justify-center">
+
+                                                <!-- logo start -->
+
+                                                <i
+                                                    class="fa-brands fa-bootstrap text-purple-600 flex justify-start items-start text-[40px]">
+
+                                                    <span class="text-white pl-[10px] font-light">45<span
+                                                            class="font-serif font-bold">%</span></span>
+
+                                                </i>
+
+                                                <!-- logo end -->
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- for html end circule -->
+
+                            </div>
+
+                        </div>
+
+                        <!-- sectin 02 end -->
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+        <!-- bootstrap end -->
+
+        <!-- tailwind CSS start -->
+
+        <div
+            class="w-[70vw] h-[80vh] border border-[#277a7a] mx-auto hover:border-[aqua] hover:shadow-sshadow hover:shadow-[rgba(46,82,82,0.24)] duration-[1s] mt-[40px]">
+
+            <div class="m-[20px]">
+
+                <h1 class="text-white font-[lemon] underline text-2xl">Tailwind CSS Wizardry:</h1>
+
+                <p class="text-white font-[lemon]">
+                    In addition to Bootstrap, I am well-versed in Tailwind CSS, a utility-first CSS framework. This
+                    approach
+                    allows me to rapidly build and customize designs with a minimal footprint. My proficiency in
+                    Tailwind
+                    CSS enables me to create modern, scalable, and maintainable styles for web applications.
+                </p>
+
+                <div class="text-[50px] mt-[4vw] w-full h-full mx-auto">
+
+                    <div class=" relative w-full h-full">
+
+                        <!-- section 01 start -->
+
+                        <!-- tailwind start -->
+
+                        <div class="w-[427px] h-[219px]">
+
+                            <!-- tailwind first start -->
+
+                            <div class="relative w-full h-full">
+
+                                <div class=" absolute top-[70px]">
+
+                                    <!-- tailwind logo start -->
+
+                                    <div class="flex justify-start items-start">
+
+                                        <img src="src/img/tailwind.png" alt="" width="60px">
+                                        <h1
+                                            class="text-2xl text-white mt-[1.5vh] ml-[1.2vw] absolute left-[40px] font-bold">
+                                            Tailwind CSS Wizardry</h1>
+
+                                    </div>
+
+                                    <!-- tailwind logo end -->
+
+                                    <!-- tailwind progress bar start -->
+
+                                    <div class="bg-black h-[1.5vh] w-[30vw] mt-[0.8vw] rounded-full relative">
+
+                                        <div class="w-[70%] h-full">
+
+                                            <div
+                                                class="bg-[rgb(61,190,190)] w-[100%] h-full rounded-full animate-progressbar relative">
+
+
+                                                <span
+                                                    class="text-sm text-white absolute top-[35px] right-[-8px] z-[3] animate-aopacity duration-[1s]">70%</span>
+                                                <i
+                                                    class="fa-solid fa-message absolute top-[15px] right-[-16px] z-[2] animate-aopacity duration-[1s] rotate-180">
+                                                </i>
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- tailwind progress bar end -->
+                            </div>
+
+                            <!-- html first end -->
+
+                        </div>
+
+                        <!-- bootstrap bar end -->
+
+                        <!-- sectin 01 end -->
+
+                        <!-- devider start -->
+                        <div
+                            class="bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] rounded-full h-full w-[9px] absolute top-0 left-[48%]">
+                        </div>
+                        <!-- devider end -->
+
+                        <!-- sectin 02 start -->
+
+
+                        <div class="absolute top-0 right-0 w-[48.5%] h-full">
+
+                            <div class="relative w-full h-full">
+
+                                <!-- for html start circule -->
+
+                                <div
+                                    class="w-[49%] h-full bg-[conic-gradient(from_468deg_at_50%_50%,rgb(61,190,190)_0%,rgb(61,190,190)_70%,black_70%,black_100%,rgb(239,68,68))] absolute left-[25%] rounded-full animate-ncroll-70">
+
+                                    <div class="w-full h-full flex items-center justify-center">
+
+                                        <div class="bg-gray-950 w-[90%] h-[90%] rounded-full">
+
+                                            <div class="w-full h-full flex items-center justify-center">
+
+                                                <!-- logo start -->
+
+
+                                                <img src="src/img/tailwind.png" width="60px" alt="" class="fa-brands fa-bootstrap text-purple-600 flex justify-start
+                                                items-start text-[40px]">
+
+                                                <span class="text-white pl-[10px] font-light">70<span
+                                                        class="font-serif font-bold">%</span></span>
+
+
+
+                                                <!-- logo end -->
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- for html end circule -->
+
+                            </div>
+
+                        </div>
+
+                        <!-- sectin 02 end -->
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+        <!-- tailwind CSS end -->
+
+        <!-- skills end -->
+
+    </div>
+
+    <footer
+        class="w-[98vw] h-[50vh] border-t border-[#277a7a] mx-auto hover:border-[#34163b] hover:shadow-sshadow hover:shadow-[rgba(19,15,26,0.5)] duration-[200ms] mt-[40px] font-[lemon] relative">
+
+        <h1 class="text-white text-center font-bold text-2xl underline underline-offset-8">Let's Connect and Create
+            Together!</h1>
+
+        <p class="text-white text-center mt-[10px]">
+            Harnessing the power of HTML, CSS, Bootstrap, and Tailwind CSS, I am a web developer with a versatile skill
+            set ready to bring your digital vision to life. Proficient in crafting visually stunning and seamlessly
+            functional websites, I excel at creating responsive and user-friendly experiences. From the structural
+            foundation laid by HTML to the stylistic finesse of CSS and the streamlined efficiency of Bootstrap and
+            Tailwind CSS, I navigate the digital landscape with precision. If you're in search of a web developer
+            passionate about transforming code into captivating online experiences, I'm eager to contribute my skills to
+            your next project. Let's build something extraordinary together!
+        </p>
+
+        <!-- icon start -->
+        <div class="w-full h-[22%] absolute bottom-[35%]">
+            <div class="flex justify-center items-center">
+
+                <a href="#">
+                    <i class="fa fa-facebook-official text-[aqua] rounded-full text-6xl mr-16 mt-14 hover:shadow-glow duration-500 hover:bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] hover:text-black"
+                        aria-hidden="true">
+                    </i>
+                </a>
+
+                <a href="#">
+                    <i class="fa fa-telegram text-[aqua] rounded-full text-6xl mr-16 mt-14 hover:shadow-glow duration-500 hover:bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] hover:text-black"
+                        aria-hidden="true">
+                    </i>
+                </a>
+
+                <a href="#">
+                    <i class="fa fa-github text-[aqua] rounded-full text-6xl mr-16 mt-14 hover:shadow-glow duration-500 hover:bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] hover:text-black"
+                        aria-hidden="true">
+                    </i>
+                </a>
+
+            </div>
+        </div>
+        <!-- icon end -->
+
+        <div class="absolute bottom-0 text-white font-sans w-full h-[10%] bg-gray-800">
+            <div class="flex justify-center items-center">
+                <p class="font-bold mt-[4px]">© Nahid Islam 2024.</p>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="src/img/logo.png">
+    <title>MASUM</title>
+
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;duration-1000;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+
+    <!-- FONT end -->
+
+    <!-- icon -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- icon end -->
+
+    <!-- font awsome start-->
+    <script src="https://kit.fontawesome.com/98021032cd.js" crossorigin="anonymous"></script>
+    <!-- font awsome end-->
+
+    <link rel="stylesheet" href="./src/output.css">
+
+</head>
+
+<body class=" bg-gray-950 scrollbar m-0 p-0">
+
+    <section> <!-- header section -->
+
+        <!-- header start -->
+
+        <!-- navegation start -->
+
+        <header class="bg-gray-800 py-[10px]">
+
+            <nav class="flex justify-between items-center w-[92%]  mx-auto md:w-full lg:w-full">
+
+                <div>
+
+                    <div
+                        class="w-[78px] h-[54px] cursor-pointer md:mx-[0vw] md:w[78px] md:h-[54px] lg:mx-[6vw] animate-nvspin rounded-full bg-[url('img/logo.png')] bg-no-repeat bg-[length:78px_54px]">
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="nav-links duration-1000 md:static lg:static absolute bg-gray-800 mobile:rounded-b-lg md:min-h-fit min-h-[47vh] left-0 top-[-100%] md:w-auto  w-full flex items-centerpx-5 font-bold font-[lemon] text-xl">
+
+                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-0 text-white">
+
+                        <li>
+                            <a class="md:py-[16px] md:px-[0px] md:flex block md:w-fit w-[100vw] md:mt-auto mt-6 leading-[50px] md:leading-3 ps-5 rounded bg-red-700 duration-1000 shadow-nvglow"
+                                href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="md:py-[16px] md:px-[0px] md:flex block md:w-fit w-[100vw] md:mt-auto mt-3 leading-[50px] md:leading-3 ps-5 rounded hover:text-gray-950 hover:bg-red-700 duration-1000 hover:shadow-nvglow"
+                                href="projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <a class="md:py-[16px] md:px-[0px] md:flex block md:w-fit w-[100vw] md:mt-auto mt-3 leading-[50px] md:leading-3 ps-5 rounded hover:text-gray-950 hover:bg-red-700 duration-1000 hover:shadow-nvglow"
+                                href="cv.html">Resume/CV</a>
+                        </li>
+                        <li>
+                            <a class="md:py-[16px] md:px-[0px] md:flex block md:w-fit w-[100vw] md:mt-auto mt-3 leading-[50px] md:leading-3 ps-5 rounded hover:text-gray-950 hover:bg-red-700 duration-1000 hover:shadow-nvglow"
+                                href="Skills.html" target="_self">Skills</a>
+                        </li>
+                        <li>
+                            <a class="md:py-[16px] md:px-[0px] md:flex block md:w-fit w-[100vw] md:mt-auto mt-3 leading-[50px] md:leading-3 ps-5 rounded hover:text-gray-950 hover:bg-red-700 duration-1000 hover:shadow-nvglow"
+                                href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="flex items-center gap-6">
+
+                    <button
+                        class="bg-[#38d4d4] text-lg text-white px-5 py-2 md:px-[7px] md:py-[10px] md:mx-[2vw] lg:mx-[6vw] rounded-full p-[20px] hover:text-gray-950 hover:bg-red-700 duration-1000 font-[lemon] hover:shadow-nvglow">Rent
+                        now</button>
+
+                    <ion-icon onclick="onToggleMenu(this)" name="menu"
+                        class="text-3xl cursor-pointer md:hidden text-white h-16 w-11"></ion-icon>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <!-- navegation end -->
+
+        <!-- navegation script start -->
+
+        <script>
+            const navLinks = document.querySelector('.nav-links')
+            function onToggleMenu(e) {
+                e.name = e.name === 'menu' ? 'close' : 'menu'
+                navLinks.classList.toggle('top-[9%]')
+            }
+        </script>
+
+        <!-- navegation script end -->
+
+        <!-- header end -->
+
+    </section>
+
+    <div class="overflow-hidden text-center p-[1%] leading-[40px] mx-[5vw] relative">
+
+        <!-- home start -->
+
+        <div class="w-[90vw] h-[70vh] relative">
+
+            <div
+                class="bg-gradient-to-t from-sky-400 via-purple-500 to-orange-600 w-[450px] h-[450px]  rounded-full relative float-right overflow-visible mt-[-12.7vh] mr-[12vw] animate-spin flex justify-center items-center hover:bg-gradient-to-t hover:from-red-500 hover:via-green-500 hover:to-sky-500 z-0">
+
+                <!-- for glow start -->
+
+                <div
+                    class="absolute w-[450px] h-[450px] rounded-full bg-gradient-to-t from-sky-400 via-purple-500 to-orange-600 hover:bg-gradient-to-t hover:from-red-500 hover:via-green-500 hover:to-sky-500">
+                </div>
+                <div
+                    class="absolute w-[450px] h-[450px] rounded-full bg-gradient-to-t from-sky-400 via-purple-500 to-orange-600 hover:bg-gradient-to-t hover:from-red-500 hover:via-green-500 hover:to-sky-500 blur-[5px]">
+                </div>
+                <div
+                    class="absolute w-[450px] h-[450px] rounded-full bg-gradient-to-t from-sky-400 via-purple-500 to-orange-600 hover:bg-gradient-to-t hover:from-red-500 hover:via-green-500 hover:to-sky-500 blur-[10px]">
+                </div>
+                <div
+                    class="absolute w-[450px] h-[450px] rounded-full bg-gradient-to-t from-sky-400 via-purple-500 to-orange-600 hover:bg-gradient-to-t hover:from-red-500 hover:via-green-500 hover:to-sky-500 blur-[15px]">
+                </div>
+                <div
+                    class="absolute w-[450px] h-[450px] rounded-full bg-gradient-to-t from-sky-400 via-purple-500 to-orange-600 hover:bg-gradient-to-t hover:from-red-500 hover:via-green-500 hover:to-sky-500 blur-[16px]">
+                </div>
+
+                <!-- for glow end -->
+
+                <div class="w-[420px] h-[420px] rounded-full animate-sstop z-[11]">
+                    <div
+                        class="w-[420px] h-[420px] rounded-full bg-[url('./img/hover.jfif')] hover:bg-[url('./img/wp7818945.jpg')] bg-cover duration-[0.5s] delay-[0.5s] z-[8]">
+                    </div>
+
+                    <!-- <img class="w-[30vw] h-[62.3vh] rounded-full my-[1vh] mx-auto"
+                        src="img/hover.jfif" alt=""> -->
+
+                </div>
+
+
+            </div>
+
+            <p
+                class="text-white font-[lemon] mt-[15vh] hover:text-[#00ffff] cursor-pointer duration-500 hover:shadow-lg hover:shadow-[aqua] w-[40%] rounded-lg ml-[45px]">
+                Hello there! I'm NAHID, a passionate and detail-oriented web developer with a solid foundation in HTML,
+                CSS, Bootstrap, and Tailwind CSS. My journey in the world of web development has equipped me with the
+                skills to transform ideas into visually appealing and user-friendly websites.
+            </p>
+
+
+            <div class="w-[40%] h-[60px] flex justify-center items-center ml-[77px] mt-[35px]"> <!-- contackt link -->
+
+
+                <a href="#">
+
+                    <i class="fa fa-facebook-official text-[rgb(0,255,255)] rounded-full text-6xl mr-16 mt-14 hover:shadow-glow duration-500 hover:bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] hover:text-black"
+                        aria-hidden="true">
+                    </i>
+
+                </a>
+
+                <a href="#">
+
+                    <i class="fa fa-telegram text-[aqua] rounded-full text-6xl mr-16 mt-14 hover:shadow-glow duration-500 hover:bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] hover:text-black"
+                        aria-hidden="true">
+                    </i>
+
+                </a>
+
+                <a href="#">
+
+                    <i class="fa fa-github text-[aqua] rounded-full text-6xl mr-16 mt-14 hover:shadow-glow duration-500 hover:bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] hover:text-black"
+                        aria-hidden="true">
+                    </i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- home end -->
+
+
+        <!-- <div class="w-[90vw] h-[100vh]">
+
+            <h1 class="text-white font-[lemon] underline text-2xl">Passion for Design and User Experience:</h1>
+
+            <p class="text-white font-[lemon]">
+                Beyond coding, I have a keen eye for design aesthetics and a strong focus on user experience. I
+                understand the importance of creating interfaces that not only look good but also provide a seamless
+                and
+                intuitive experience for visitors.
+            </p>
+        </div>
+
+        <div class="w-[90vw] h-[100vh]">
+
+            <h1 class="text-white font-[lemon] underline text-2xl">Continuous Learning:</h1>
+
+            <p class="text-white font-[lemon]">
+                The dynamic nature of web development inspires me to stay updated on the latest trends and
+                technologies.
+                I am committed to continuous learning, ensuring that my skills remain cutting-edge and adaptable to
+                the
+                ever-evolving landscape of web development.
+            </p>
+        </div> -->
+
+    </div>
+
+    <footer
+        class="w-[98vw] h-[40vh] border-t border-[#277a7a] mx-auto hover:border-[#34163b] hover:shadow-sshadow hover:shadow-[rgba(19,15,26,0.5)] duration-[200ms] mt-[40px] font-[lemon] relative">
+
+        <h1 class="text-white text-center font-bold text-2xl underline underline-offset-8 p-5">Crafting Digital
+            Experiences: Your Vision, My Expertise</h1>
+
+        <p class="text-white text-center">
+            If you're looking for a web developer who combines technical expertise with a passion for creating
+            engaging and functional websites, I would love to collaborate with you. Let's turn your vision into a
+            digital reality!
+        </p>
+
+        <!-- icon start -->
+        <div class="w-full h-[22%] absolute bottom-[50%]">
+            <div class="flex justify-center items-center">
+
+                <a href="#">
+                    <i class="fa fa-facebook-official text-[aqua] rounded-full text-6xl mr-16 mt-14 hover:shadow-glow duration-500 hover:bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] hover:text-black"
+                        aria-hidden="true">
+                    </i>
+                </a>
+
+                <a href="#">
+                    <i class="fa fa-telegram text-[aqua] rounded-full text-6xl mr-16 mt-14 hover:shadow-glow duration-500 hover:bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] hover:text-black"
+                        aria-hidden="true">
+                    </i>
+                </a>
+
+                <a href="#">
+                    <i class="fa fa-github text-[aqua] rounded-full text-6xl mr-16 mt-14 hover:shadow-glow duration-500 hover:bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] hover:text-black"
+                        aria-hidden="true">
+                    </i>
+                </a>
+
+            </div>
+        </div>
+        <!-- icon end -->
+
+        <div class="absolute bottom-0 text-white font-sans w-full h-fit bg-gray-800">
+            <div class="flex justify-center items-center">
+                <p class="font-bold py-[5px]">© Nahid Islam 2024.</p>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

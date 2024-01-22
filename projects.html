@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="src/img/logo.png">
+    <title>MASUM</title>
+
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;duration-1000;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+
+    <!-- FONT end -->
+
+    <!-- icon -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- icon end -->
+
+    <!-- font awsome start-->
+    <script src="https://kit.fontawesome.com/98021032cd.js" crossorigin="anonymous"></script>
+    <!-- font awsome end-->
+
+    <link rel="stylesheet" href="./src/output.css">
+
+</head>
+
+<body class="bg-gray-950 scrollbar">
+
+    <section> <!-- header section -->
+        <!-- header start -->
+
+        <!-- navegation start -->
+
+        <header class="bg-gray-800 py-[10px]">
+
+            <nav class="flex justify-between items-center w-[92%]  mx-auto md:w-full lg:w-full">
+
+                <div>
+
+                    <div
+                        class="w-[78px] h-[54px] cursor-pointer md:mx-[0vw] md:w[78px] md:h-[54px] lg:mx-[6vw] animate-nvspin rounded-full bg-[url('img/logo.png')] bg-no-repeat bg-[length:78px_54px]">
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="nav-links duration-1000 md:static lg:static absolute bg-gray-800 mobile:rounded-b-lg md:min-h-fit min-h-[47vh] left-0 top-[-100%] md:w-auto  w-full flex items-centerpx-5 font-bold font-[lemon] text-xl">
+
+                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-0 text-white">
+
+                        <li>
+                            <a class="md:py-[16px] md:px-[0px] md:flex block md:w-fit w-[100vw] md:mt-auto mt-6 leading-[50px] md:leading-3 ps-5 rounded hover:text-gray-950 hover:bg-red-700 duration-1000 hover:shadow-nvglow"
+                                href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="md:py-[16px] md:px-[0px] md:flex block md:w-fit w-[100vw] md:mt-auto mt-3 leading-[50px] md:leading-3 ps-5 rounded bg-red-700 duration-1000 shadow-nvglow"
+                                href="projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <a class="md:py-[16px] md:px-[0px] md:flex block md:w-fit w-[100vw] md:mt-auto mt-3 leading-[50px] md:leading-3 ps-5 rounded hover:text-gray-950 hover:bg-red-700 duration-1000 hover:shadow-nvglow"
+                                href="cv.html">Resume/CV</a>
+                        </li>
+                        <li>
+                            <a class="md:py-[16px] md:px-[0px] md:flex block md:w-fit w-[100vw] md:mt-auto mt-3 leading-[50px] md:leading-3 ps-5 rounded hover:text-gray-950 hover:bg-red-700 duration-1000 hover:shadow-nvglow"
+                                href="Skills.html" target="_self">Skills</a>
+                        </li>
+                        <li>
+                            <a class="md:py-[16px] md:px-[0px] md:flex block md:w-fit w-[100vw] md:mt-auto mt-3 leading-[50px] md:leading-3 ps-5 rounded hover:text-gray-950 hover:bg-red-700 duration-1000 hover:shadow-nvglow"
+                                href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="flex items-center gap-6">
+
+                    <button
+                        class="bg-[#38d4d4] text-lg text-white px-5 py-2 md:px-[7px] md:py-[10px] md:mx-[2vw] lg:mx-[6vw] rounded-full p-[20px] hover:text-gray-950 hover:bg-red-700 duration-1000 font-[lemon] hover:shadow-nvglow">Rent
+                        now</button>
+
+                    <ion-icon onclick="onToggleMenu(this)" name="menu"
+                        class="text-3xl cursor-pointer md:hidden text-white h-16 w-11"></ion-icon>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <!-- navegation end -->
+
+        <!-- navegation script start -->
+
+        <script>
+            const navLinks = document.querySelector('.nav-links')
+            function onToggleMenu(e) {
+                e.name = e.name === 'menu' ? 'close' : 'menu'
+                navLinks.classList.toggle('top-[9%]')
+            }
+        </script>
+
+        <!-- navegation script end -->
+
+        <!-- header end -->
+    </section>
+
+    <section> <!-- projects section -->
+
+        <div class="w-[90vw] h-[40vh] mx-auto mt-10">
+
+            <h1 class="text-white font-[lemon] underline underline-offset-8 text-2xl text-center">Projects Showcase:
+            </h1>
+
+            <p class="text-white font-[lemon] text-center mt-3 leading-9">
+                Take a look at my portfolio to explore a collection of projects where I've applied my skills. From
+                static websites to dynamic web applications, each project reflects my commitment to excellence in
+                web
+                development. Whether it's a personal blog, an e-commerce site, or a corporate platform, I approach
+                each
+                project with enthusiasm and dedication.
+            </p>
+
+        </div>
+
+        <!-- box start -->
+
+        <div class="h-[270vh] w-[90vw] grid grid-cols-2 grid-rows-3 gap-4 mx-auto mb-[3%]">
+
+            <div
+                class="group duration-1000 bg-slate-900/50 rounded-2xl border border-[rgba(200,200,200,0.5)] text-white font-[lemon] relative hover:border-[rgb(39,122,122)] hover:shadow-md hover:shadow-[rgb(39,122,122)]">
+
+                <h1
+                    class="absolute top-[40%] left-[40%] text-[35px] text-[rgba(230,230,230,0.5)] group-hover:text-white group-hover:scale-[1.5] duration-1000">
+                    Empty</h1>
+
+                <p
+                    class="absolute top-[50%] left-[18%] text-[20px] text-[rgba(230,230,230,0.5)] group-hover:text-white group-hover:scale-[1.5] duration-1000">
+                    No project here, but upload soon.
+                </p>
+
+            </div>
+
+            <div
+                class="group duration-1000 bg-slate-900/50 rounded-2xl border border-[rgba(200,200,200,0.5)] text-white font-[lemon] relative hover:border-[rgb(39,122,122)] hover:shadow-md hover:shadow-[rgb(39,122,122)]">
+
+                <h1
+                    class="absolute top-[40%] left-[40%] text-[35px] text-[rgba(230,230,230,0.5)] group-hover:text-white group-hover:scale-[1.5] duration-1000">
+                    Empty</h1>
+
+                <p
+                    class="absolute top-[50%] left-[18%] text-[20px] text-[rgba(230,230,230,0.5)] group-hover:text-white group-hover:scale-[1.5] duration-1000">
+                    No project here, but upload soon.
+                </p>
+
+            </div>
+
+            <div
+                class="group duration-1000 bg-slate-900/50 rounded-2xl border border-[rgba(200,200,200,0.5)] text-white font-[lemon] relative hover:border-[rgb(39,122,122)] hover:shadow-md hover:shadow-[rgb(39,122,122)]">
+
+                <h1
+                    class="absolute top-[40%] left-[40%] text-[35px] text-[rgba(230,230,230,0.5)] group-hover:text-white group-hover:scale-[1.5] duration-1000">
+                    Empty</h1>
+
+                <p
+                    class="absolute top-[50%] left-[18%] text-[20px] text-[rgba(230,230,230,0.5)] group-hover:text-white group-hover:scale-[1.5] duration-1000">
+                    No project here, but upload soon.
+                </p>
+
+            </div>
+
+            <div
+                class="group duration-1000 bg-slate-900/50 rounded-2xl border border-[rgba(200,200,200,0.5)] text-white font-[lemon] relative hover:border-[rgb(39,122,122)] hover:shadow-md hover:shadow-[rgb(39,122,122)]">
+
+                <h1
+                    class="absolute top-[40%] left-[40%] text-[35px] text-[rgba(230,230,230,0.5)] group-hover:text-white group-hover:scale-[1.5] duration-1000">
+                    Empty</h1>
+
+                <p
+                    class="absolute top-[50%] left-[18%] text-[20px] text-[rgba(230,230,230,0.5)] group-hover:text-white group-hover:scale-[1.5] duration-1000">
+                    No project here, but upload soon.
+                </p>
+
+            </div>
+
+            <div
+                class="group duration-1000 bg-slate-900/50 rounded-2xl border border-[rgba(200,200,200,0.5)] text-white font-[lemon] relative hover:border-[rgb(39,122,122)] hover:shadow-md hover:shadow-[rgb(39,122,122)]">
+
+                <h1
+                    class="absolute top-[40%] left-[40%] text-[35px] text-[rgba(230,230,230,0.5)] group-hover:text-white group-hover:scale-[1.5] duration-1000">
+                    Empty</h1>
+
+                <p
+                    class="absolute top-[50%] left-[18%] text-[20px] text-[rgba(230,230,230,0.5)] group-hover:text-white group-hover:scale-[1.5] duration-1000">
+                    No project here, but upload soon.
+                </p>
+
+            </div>
+
+            <div
+                class="group duration-1000 bg-slate-900/50 rounded-2xl border border-[rgba(200,200,200,0.5)] text-white font-[lemon] relative hover:border-[rgb(39,122,122)] hover:shadow-md hover:shadow-[rgb(39,122,122)]">
+
+                <h1
+                    class="absolute top-[40%] left-[40%] text-[35px] text-[rgba(230,230,230,0.5)] group-hover:text-white group-hover:scale-[1.5] duration-1000">
+                    Empty</h1>
+
+                <p
+                    class="absolute top-[50%] left-[18%] text-[20px] text-[rgba(230,230,230,0.5)] group-hover:text-white group-hover:scale-[1.5] duration-1000">
+                    No project here, but upload soon.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- box end -->
+
+    </section>
+
+    <footer
+        class="w-[98vw] h-[50vh] border-t border-[#277a7a] mx-auto hover:border-[#34163b] hover:shadow-sshadow hover:shadow-[rgba(19,15,26,0.5)] duration-[200ms] mt-[40px] font-[lemon] relative">
+
+        <h1 class="text-white text-center font-bold text-2xl underline underline-offset-8 p-5">Unveil My Creative Works</h1>
+
+        <p class="text-white text-center">
+            Explore more of my work by visiting my portfolio. From static websites to dynamic web applications, each project showcases my dedication to excellence in web development. Whether it's a personal blog, an e-commerce site, or a corporate platform, I approach each project with enthusiasm and commitment.
+        </p>
+
+        <!-- icon start -->
+        <div class="w-full h-[22%] absolute bottom-[40%]">
+            <div class="flex justify-center items-center">
+
+                <a href="#">
+                    <i class="fa fa-facebook-official text-[aqua] rounded-full text-6xl mr-16 mt-14 hover:shadow-glow duration-500 hover:bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] hover:text-black"
+                        aria-hidden="true">
+                    </i>
+                </a>
+
+                <a href="#">
+                    <i class="fa fa-telegram text-[aqua] rounded-full text-6xl mr-16 mt-14 hover:shadow-glow duration-500 hover:bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] hover:text-black"
+                        aria-hidden="true">
+                    </i>
+                </a>
+
+                <a href="#">
+                    <i class="fa fa-github text-[aqua] rounded-full text-6xl mr-16 mt-14 hover:shadow-glow duration-500 hover:bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] hover:text-black"
+                        aria-hidden="true">
+                    </i>
+                </a>
+
+            </div>
+        </div>
+        <!-- icon end -->
+
+        <div class="absolute bottom-0 text-white font-sans w-full h-fit bg-gray-800">
+            <div class="flex justify-center items-center">
+                <p class="font-bold py-[5px]">© Nahid Islam 2024.</p>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
