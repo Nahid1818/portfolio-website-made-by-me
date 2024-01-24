@@ -34,7 +34,7 @@
 </head>
 
 <body
-    class="bg-[url('img/bg02.jpg')] bg-no-repeat bg-cover scrollbar m-0 p-0 bg-fixed">
+    class="bg-[url('img/bg02.jpg')] bg-no-repeat bg-cover mobile:bg-center scrollbar m-0 p-0 bg-fixed">
 
     <section> <!-- header section -->
 
@@ -56,7 +56,7 @@
 
 
                 <div
-                    class="nav-links duration-1000 md:static lg:static absolute bg-gray-800 mobile:rounded-b-lg md:min-h-fit min-h-[47vh] left-0 top-[-100%] md:w-auto  w-full flex items-centerpx-5 font-bold font-[lemon] text-xl">
+                    class="nav-links duration-1000 md:static lg:static absolute bg-gray-800 mobile:rounded-b-lg md:min-h-fit min-h-[47vh] left-0 top-[-100%] md:w-auto  w-full flex items-centerpx-5 font-bold font-[lemon] text-xl z-[70] mobile:mt-[25px]">
 
                     <ul class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-0 text-white">
 
@@ -121,7 +121,7 @@
 
     
     
-    <section class="w-[90vw] h-fit mx-auto mt-[1%] grid grid-cols-2 grid-rows-4 overflow-hidden text-[orange]"><!-- cv section -->
+    <section class="w-[90vw] h-fit mx-auto mt-[1%] grid grid-cols-2 mobile:grid-cols-1 grid-rows-4 mobile:grid-rows-[70px] mobile:gap-8 overflow-hidden text-[orange]"><!-- cv section -->
         
         
         <!-- <div class="absolute top-0 left-0 w-[50%] h-[50%]">
@@ -249,49 +249,50 @@
 
         </div>
 
-        <div class="col-span-full flex justify-center items-center text-purple-800"> <!--08-->
+        <div class="col-span-full flex justify-center items-center text-purple-500"> <!--08-->
 
-            <h2 class="text-2xl font-bold mb-4 mt-6"> References:</h2>
+            <h2 class="text-2xl mobile:text-lg font-bold mb-4 mt-6"> References:</h2>
 
-            <p class="text-2xl font-bold mb-4 mt-6"> Available upon request. </p>
+            <p class="text-2xl mobile:text-lg font-bold mb-4 mt-6"> <span class="text-red-600">Available</span> <span class="text-aqua">upon request<span class="text-orange-500">.</span></span> </p>
 
         </div>
 
 
     </section>
 
-    <footer
-        class="w-[99vw] h-[40vh] border-t border-[#277a7a] mx-auto hover:border-[#34163b] hover:shadow-sshadow hover:shadow-[rgba(19,15,26,0.5)] duration-[200ms] mt-[40px] font-[lemon] relative bg-gray-950/50">
+    <footer class="w-[98vw] h-[40vh] mobile:h-[55vh] border-t border-[#277a7a] mx-auto hover:border-[#34163b] hover:shadow-sshadow hover:shadow-[rgba(19,15,26,0.5)] duration-[200ms] mt-[40px] font-[lemon] relative bg-gray-950/50">
 
-        <h1 class="text-white text-center font-bold text-2xl underline underline-offset-8 p-5">Professional Portfolio</h1>
+        <h1 class="text-white text-center font-bold text-2xl mobile:text-[15px] underline underline-offset-8 p-5">Professional Portfolio</h1>
 
-        <p class="text-white text-center">
+        <p class="text-white text-center mobile:text-sm">
             Explore my professional journey and accomplishments. For a detailed look at my skills, experience, and projects, feel free to download my full CV or connect with me for more information.
         </p>
 
         <!-- icon start -->
-        <div class="w-full h-[22%] absolute bottom-[50%]">
-            <div class="flex justify-center items-center">
+        <div class="w-full h-[22%] mobile:h-[15%] absolute bottom-[50%] mobile:bottom-[10%] mobile:overflow-hidden">
+
+            <div class="flex justify-center items-center mobile:justify-around">
 
                 <a href="#">
-                    <i class="fa fa-facebook-official text-[aqua] rounded-full text-6xl mr-16 mt-14 hover:shadow-glow duration-500 hover:bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] hover:text-black"
+                    <i class="fa fa-facebook-official text-[aqua] rounded-full text-6xl mobile:text-[30px] mr-16 mobile:mr-0 mt-14 mobile:mt-0 hover:shadow-glow duration-500 hover:bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] hover:text-black"
                         aria-hidden="true">
                     </i>
                 </a>
 
                 <a href="#">
-                    <i class="fa fa-telegram text-[aqua] rounded-full text-6xl mr-16 mt-14 hover:shadow-glow duration-500 hover:bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] hover:text-black"
+                    <i class="fa fa-telegram text-[aqua] rounded-full text-6xl mobile:text-[30px] mr-16 mobile:mr-0 mt-14 mobile:mt-0 hover:shadow-glow duration-500 hover:bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] hover:text-black"
                         aria-hidden="true">
                     </i>
                 </a>
 
                 <a href="#">
-                    <i class="fa fa-github text-[aqua] rounded-full text-6xl mr-16 mt-14 hover:shadow-glow duration-500 hover:bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] hover:text-black"
+                    <i class="fa fa-github text-[aqua] rounded-full text-6xl mobile:text-[30px] mr-16 mobile:mr-0 mt-14 mobile:mt-0 hover:shadow-glow duration-500 hover:bg-[linear-gradient(#642bff,_#ff22e6,_orange,_aqua)] hover:text-black"
                         aria-hidden="true">
                     </i>
                 </a>
 
             </div>
+
         </div>
         <!-- icon end -->
 

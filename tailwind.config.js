@@ -119,7 +119,7 @@ module.exports = {
         'sshadow': '0px 0px 300px 10px rgba(0,255,255,0.2)',
       },
       screens: {
-        'mobile': '0px',
+        'mobile': { 'max': '640px' },
       },
     },
   },
